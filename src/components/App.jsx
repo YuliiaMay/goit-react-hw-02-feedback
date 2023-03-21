@@ -1,16 +1,24 @@
-export const App = () => {
+import React from "react";
+import FeedbackBtns from "./Feedback";
+
+
+
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <p>Please leave feedback</p>
+      <FeedbackBtns
+        // initualQuantityGood={0}
+        // initualQuantityNeutral={0}
+        // initualQuantityBad={0}
+        // initualTotal={0}
+        // initualPositiveFeedback={0}
+      />
+
+    </>
   );
 };
+
+
+export default App;
