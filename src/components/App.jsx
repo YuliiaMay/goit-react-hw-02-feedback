@@ -63,14 +63,13 @@ export class App extends Component {
                 <FeedbackOptions
                     options={options}
                     onLeaveFeedback={this.onLeaveFeedback}
-                    // onGoodClick={this.onGoodClick}
-                    // onNeutralClick={this.onNeutralClick}
-                    // onBadClick={this.onBadClick}
                 />
-
+                
+                
                 {
                     (good || neutral || bad > 0) 
                         ? <Statistics
+                            title="Statistics"
                             good={good}
                             neutral={neutral}
                             bad={bad}
